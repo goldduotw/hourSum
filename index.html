@@ -5,33 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hour Sum</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#1a1a1a">
 </head>
 <body>
-    <div id="app" class="full-view">
-        <header id="header">
-            <h1 id="title-display">EA Prep Hours</h1>
-            <input type="text" id="title-input" placeholder="Enter title (e.g., EA Prep)" value="EA Prep Hours">
-        </header>
+    <div id="app">
+        <input type="text" id="title-input" value="Time Lapsed">
+        <div class="primary-timer" id="timer-display">00d : 00h : 00m</div>
+        <div class="decimal-display" id="decimal-display">0.00 Total Hours</div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn primary">START</button>
+            <button id="pause-btn" class="btn secondary hidden">PAUSE</button>
+            <button id="reset-btn" class="btn danger">RESET</button>
+        </div>
 
-        <main id="main-display">
-            <div class="time-container">
-                <div class="primary-timer" id="timer-display">00d : 00h : 00m</div>
-                <div class="decimal-display" id="decimal-display">0.00 Total Hours</div>
-            </div>
-            
-            <div class="controls">
-                <button id="start-btn" class="btn primary">START</button>
-                <button id="pause-btn" class="btn secondary hidden">PAUSE</button>
-            </div>
-        </main>
+        <div id="status-area" class="status-text"></div>
 
-        <!-- Compact view for when timer is running -->
-        <div id="compact-view" class="hidden">
-            <span id="compact-title">EA Prep</span>: <span id="compact-decimal">0.00h</span>
+        <div class="extra-controls">
+            <button id="pip-btn" class="btn link">DETACH (Pop Out)</button>
         </div>
     </div>
+
+    <!-- Padding canvas: creates the illusion of a smaller window -->
+    <canvas id="pip-canvas" width="300" height="200" style="display:none;"></canvas>
+    <video id="pip-video" autoplay muted style="display:none;"></video>
+
     <script src="script.js"></script>
 </body>
 </html>

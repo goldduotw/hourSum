@@ -1,0 +1,24 @@
+{
+  "name": "hoursum",
+  "version": "1.0.0",
+  "description": "hours accrued (e.g., in exam prep)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldduotw/hourSum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/goldduotw/hourSum/issues"
+  },
+  "homepage": "https://github.com/goldduotw/hourSum#readme",
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}
