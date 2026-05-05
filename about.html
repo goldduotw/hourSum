@@ -3,51 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Hour Sum | Gold Duo Studio</title>
+    <title>About Hour Sum | Project Accrual Tracking</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, system-ui, sans-serif;
             line-height: 1.8;
-            color: #334155;
+            color: #e0e0e0;
+            background-color: #121212;
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
-            background: #f8fafc;
         }
-        h1, h2 { color: #0f172a; }
-        .card { background: white; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 20px; }
-        .nav-link { color: #2563eb; text-decoration: none; font-weight: 600; }
+        h1, h2 { color: #4caf50; }
+        .content-box { 
+            background: #1e1e1e; 
+            padding: 30px; 
+            border-radius: 12px; 
+            border: 1px solid #333; 
+            margin-bottom: 25px; 
+        }
+        .nav-link { color: #44aaff; text-decoration: none; font-weight: bold; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <a href="index.html" class="nav-link">← Back to Timer</a>
     <h1>About Hour Sum</h1>
     
-    <div class="card">
-        <h2>The Architecture of Focus</h2>
+    <div class="content-box">
+        <h2>The Purpose of Hour Sum</h2>
         <p>
-            Hour Sum was developed by <strong>Gold Duo</strong> to solve a specific friction point in professional development: tracking the long-term accrual of "deep work" hours. Unlike standard stopwatches that focus on seconds and minutes, Hour Sum is designed for projects that span months or years, such as preparing for the <strong>IRS Enrolled Agent (EA)</strong> credentials or completing complex numerical modeling projects.
+            Hour Sum was engineered to address a specific gap in time-tracking utilities: <strong>long-term project accrual.</strong> While most stopwatches focus on the immediate second or minute, professionals in fields like tax preparation, scientific research, and engineering often need to track hundreds of hours over several months.
+        </p>
+        <p>
+            Whether you are documenting the 200–300 hours required for <strong>Enrolled Agent (EA) exam prep</strong> or tracking consultancy hours for a technical project, Hour Sum provides a persistent, high-visibility interface.
         </p>
     </div>
 
-    <div class="card">
+    <div class="content-box">
         <h2>How It Works</h2>
         <ul>
-            <li><strong>Persistent Tracking:</strong> The app utilizes local browser storage to ensure your progress isn't lost if you close the tab or restart your computer.</li>
-            <li><strong>Decimal Precision:</strong> Many professional billing and certification requirements use decimal hours (e.g., 1.25 hours). Hour Sum calculates this automatically to two decimal places.</li>
-            <li><strong>Picture-in-Picture (PiP):</strong> By detaching the timer into a floating window, you can keep your progress visible while navigating study materials or tax software without sacrificing screen real estate.</li>
+            <li><strong>Persistent State:</strong> The application uses <code>localStorage</code> to ensure your timer continues even if the browser is closed, the computer sleeps, or the system restarts.</li>
+            <li><strong>Decimal Hour Conversion:</strong> Professional billing and certification logs often require decimal formats (e.g., 1.50 hours). Hour Sum automatically converts your lapsed time into a standard two-decimal format for easy logging.</li>
+            <li><strong>Floating Display (PiP):</strong> Using the Picture-in-Picture API, you can "detach" the timer. This allows the clock to float over your study materials or tax software, keeping your progress visible without switching tabs.</li>
         </ul>
     </div>
 
-    <div class="card">
-        <h2>About the Developer</h2>
+    <div class="content-box">
+        <h2>The Architecture of Precision</h2>
         <p>
-            The lead architect at Gold Duo holds a Ph.D. in Atmospheric Science and has decades of experience in numerical modeling and technical consultancy. After successfully navigating the 2026 tax season as an Intuit Tax Associate, the need for a streamlined, "no-nonsense" hour tracker for tax professionals became clear. Hour Sum is the result of that intersection between scientific precision and practical tax-compliance needs.
+            Developed by <strong>Gold Duo</strong>, this tool reflects a philosophy of "Precision tools for a complex world." The developer, an Atmospheric Scientist (Ph.D.) and technical consultant, built this utility following a successful season as an Intuit Tax Associate. By merging scientific accuracy with the practical needs of tax professionals, Hour Sum eliminates the friction of manual time calculations.
         </p>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Gold Duo | Precision. Clarity. Control.</p>
+    <footer style="text-align: center; color: #666; font-size: 0.8rem;">
+        &copy; 2026 Gold Duo Studio | Architecture for Clarity.
     </footer>
 </body>
 </html>
