@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour Sum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
+    <div id="app" class="full-view">
+        <header id="header">
+            <h1 id="title-display">EA Prep Hours</h1>
+            <input type="text" id="title-input" placeholder="Enter title (e.g., EA Prep)" value="EA Prep Hours">
+        </header>
+
+        <main id="main-display">
+            <div class="time-container">
+                <div class="primary-timer" id="timer-display">00d : 00h : 00m</div>
+                <div class="decimal-display" id="decimal-display">0.00 Total Hours</div>
+            </div>
+            
+            <div class="controls">
+                <button id="start-btn" class="btn primary">START</button>
+                <button id="pause-btn" class="btn secondary hidden">PAUSE</button>
+            </div>
+        </main>
+
+        <!-- Compact view for when timer is running -->
+        <div id="compact-view" class="hidden">
+            <span id="compact-title">EA Prep</span>: <span id="compact-decimal">0.00h</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
