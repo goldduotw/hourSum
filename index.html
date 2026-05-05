@@ -3,79 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hour Sum | Professional Project Accrual & Study Tracker</title>
+    <title>Hour Sum | The Science of Project Accrual & Workforce Transparency</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Essential layout adjustments for content depth */
-        body { 
-            flex-direction: column; 
-            overflow-y: auto; 
-            height: auto; 
-            padding: 50px 0; 
-        }
-        
-        #app { 
-            margin-bottom: 60px; 
-            flex-shrink: 0;
-        }
-        
-        .info-section { 
-            max-width: 750px; 
-            text-align: left; 
-            margin: 0 auto 80px; 
-            padding: 20px; 
-            line-height: 1.8;
-            color: #bbb;
-        }
-        
-        .info-section h2 { 
-            color: #4caf50; 
-            border-bottom: 1px solid #333; 
-            padding-bottom: 10px; 
-            margin-top: 40px;
-        }
-        
-        .info-section h3 { 
-            color: #e0e0e0; 
-            margin-top: 30px; 
-        }
-
-        .info-section p, .info-section ul { 
-            margin-bottom: 20px; 
-        }
-
-        .info-section li { 
-            margin-bottom: 12px; 
-        }
-
-        footer { 
-            margin-top: 40px; 
-            text-align: center; 
-            border-top: 1px solid #333; 
-            padding: 30px 0; 
-            width: 100%; 
-            background: rgba(0,0,0,0.2);
-        }
-        
-        footer a { 
-            color: #44aaff; 
-            text-decoration: none; 
-            font-size: 0.85rem; 
-            margin: 0 15px; 
-            opacity: 0.8; 
-        }
-        
-        footer a:hover { 
-            text-decoration: underline; 
-            opacity: 1; 
-        }
-        
-        .copyright { 
-            color: #555; 
-            font-size: 0.75rem; 
-            margin-top: 15px; 
-        }
-    </style>
 </head>
 <body>
     <div id="app">
@@ -96,30 +25,41 @@
         </div>
     </div>
 
-    <section class="info-section">
-        <h2>Mastering Long-Term Project Accrual</h2>
-        <p>Whether you are a researcher tracking laboratory hours, a developer logging side-project milestones, or a student preparing for professional certifications, managing "Deep Work" requires more than a simple stopwatch. <strong>Hour Sum</strong> is engineered for precision over the long haul[cite: 1].</p>
+    <article class="article-container">
+        <h1>The Architecture of Accountability: Mastering Project Accrual in the Modern Workforce</h1>
+        <p class="lead-text">In an era of distributed teams and complex technical consultancy, the bridge between effort and results is transparency. Hour Sum is engineered to provide that bridge with scientific precision.</p>
+
+        <h2>The Evolution of Time Tracking: From Presence to Accrual</h2>
+        <p>Historically, workplace productivity was measured by physical presence—the "punch clock" era. However, as the global economy shifts toward specialized knowledge work, the primary metric has evolved from mere attendance to <strong>project accrual</strong>. Professionals in 2026, from atmospheric scientists performing numerical modeling to tax associates navigating a high-volume season, need a way to track deep-work sessions that span weeks or months without data decay.</p>
+
+        <p>Standard stopwatches fail because they are designed for the short term. They lack the persistence required to survive system reboots, browser crashes, or the multi-day "flow states" common in software engineering and research. Hour Sum addresses this by utilizing <code>localStorage</code>, ensuring your progress is etched into the browser's persistent state.</p>
+
+        <h2>For Employers: The Strategic Value of Verified Hours</h2>
+        <p>For project managers and business owners, the "bottleneck" is often the verification of labor in a remote or asynchronous environment. Employer oversight is not about micromanagement; it is about establishing a verifiable "paper trail" for payroll, client billing, and project scoping accuracy.</p>
         
-        <h3>Why Project Accrual Matters</h3>
-        <p>Standard timers are designed for short bursts—minutes and seconds. In contrast, professional growth often requires tracking hundreds of hours across weeks or months. Hour Sum provides a persistent record of your cumulative effort, allowing you to stay focused on the work rather than the math[cite: 1].</p>
+        <h3>1. Eliminating Invoicing Friction with Decimal Precision</h3>
+        <p>Most professional billing standards, especially in legal and technical consultancy, require time to be logged in decimal format (e.g., 1.75 hours). Human error during the manual conversion from minutes to decimals is a frequent cause of invoicing disputes. By automating this conversion in real-time, Hour Sum provides "audit-ready" documentation that simplifies the relationship between contractor and employer.</p>
 
-        <h3>Professional Use Cases & Performance Tracking</h3>
-        <p>Hour Sum is a versatile utility optimized for various professional disciplines requiring strict oversight of cumulative time blocks[cite: 1]:</p>
-        <ul>
-            <li><strong>Financial & Tax Professionals:</strong> Perfect for tracking the 200–300 hours required for <strong>Enrolled Agent (EA)</strong> credentials, CPA exam cycles, or seasonal tax preparation volume for high-capacity firms[cite: 1].</li>
-            <li><strong>STEM & Academic Research:</strong> Ideal for doctoral candidates and scientists managing <strong>numerical modeling</strong> sessions, atmospheric data analysis, or long-form laboratory observations[cite: 1].</li>
-            <li><strong>Software Engineering & DevOps:</strong> Track deep-work sprints for <strong>generative AI application development</strong>, API integration approvals, and security verification bottlenecks[cite: 1].</li>
-            <li><strong>Legal & Compliance:</strong> Monitor billable hours for document synthesis, contract review, and legal intelligence gathering[cite: 1].</li>
-            <li><strong>Creative Technical Work:</strong> Log hours for <strong>video post-production</strong>, technical writing, and complex architecture drafting where decimal-hour precision is required for accurate invoicing[cite: 1].</li>
-        </ul>
+        <h3>2. Enhancing Workforce Transparency</h3>
+        <p>When employees use a transparent tracking utility, it builds trust. Managers can see actual time expenditure against estimated milestones, allowing for more realistic project deadlines. This is particularly critical in DevOps and security verification sprints where "hidden hours" often lead to project delays.</p>
 
-        <h3>Engineered for Reliability</h3>
-        <ul>
-            <li><strong>Precision Decimal Logging:</strong> Many professional billing and certification standards require decimal formats (e.g., 1.75 hours). Our real-time conversion eliminates manual calculation errors[cite: 1].</li>
-            <li><strong>Persistent Session State:</strong> Built using <code>localStorage</code>, the application maintains your progress across browser restarts, system sleeps, and accidental tab closures[cite: 1].</li>
-            <li><strong>Adaptive Interface:</strong> Use the Picture-in-Picture (PiP) feature to detach the timer, keeping your progress visible as a floating overlay while you work in other software or browser windows[cite: 1].</li>
-        </ul>
-    </section>
+        <h2>Optimizing Productivity with Picture-in-Picture (PiP)</h2>
+        <p>The "cost" of context switching is one of the greatest threats to modern productivity. Toggling between a complex IDE, tax software, or research database just to check a timer can break a specialist's concentration. Our Picture-in-Picture functionality allows the user to "detach" the timer, keeping a high-visibility clock floating over their work. This ensures accountability remains visible without disrupting the actual work being performed.</p>
+
+        <h2>Expert Applications Across High-Value Sectors</h2>
+        
+        <h3>Taxation, Compliance & Certification</h3>
+        <p>During peak cycles, such as the <strong>2026 tax season</strong>, professionals such as Enrolled Agent (EA) candidates must track 200–300 hours of rigorous study and prep. In these high-stakes environments, losing track of time logs can mean falling short of licensure requirements. Hour Sum acts as a persistent advocate for these professionals, ensuring every minute of study is captured with decimal accuracy.</p>
+
+        <h3>STEM & Technical Consultancy</h3>
+        <p>In fields like Atmospheric Science and Data Science, practitioners often manage compute-heavy sessions for global climate modeling or generative AI application development. These processes can run for hours or days, requiring a tracking tool that is as technically robust as the work itself. Hour Sum provides the scientific precision needed to log these technical milestones without the overhead of enterprise-level software suites.</p>
+
+        <h3>Strategic Project Management & SaaS Development</h3>
+        <p>From identifying API integration bottlenecks to managing security verification approvals, project managers utilize Hour Sum to monitor the "actual" time expenditure of high-level technical tasks. This data is invaluable for small businesses and technical consultants who need to prove the complexity of their work to stakeholders and clients.</p>
+
+        <h2>Conclusion: Engineering a Standard of Professional Clarity</h2>
+        <p>At <strong>Gold Duo</strong>, we believe that tools should act as a precise advocate for the end user. Hour Sum represents a commitment to accountability and clarity. By merging scientific precision with practical workforce utility, we ensure that every hour of professional effort is counted, verified, and valued. Whether you are an individual pursuing a professional certificate or a manager overseeing a technical team, Hour Sum is your partner in precision.</p>
+    </article>
 
     <footer>
         <a href="https://goldduo.com">Gold Duo Home</a>
@@ -128,7 +68,6 @@
         <div class="copyright">&copy; 2026 Gold Duo Studio | Architecture for Clarity</div>
     </footer>
 
-    <!-- Hidden elements for PiP functionality -->
     <canvas id="pip-canvas" width="300" height="200" style="display:none;"></canvas>
     <video id="pip-video" autoplay muted style="display:none;"></video>
 
