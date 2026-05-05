@@ -6,7 +6,6 @@
     --reset: #f44336;
 }
 
-/* Base Layout */
 body {
     margin: 0;
     font-family: sans-serif;
@@ -15,14 +14,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Changed to allow scrolling */
+    justify-content: flex-start;
     min-height: 100vh;
     padding-top: 50px;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-/* Application Container */
 #app { 
     text-align: center; 
     width: 100%; 
@@ -52,7 +50,6 @@ body {
     font-style: italic;
 }
 
-/* Buttons */
 .btn { padding: 12px 24px; font-size: 1rem; border-radius: 8px; cursor: pointer; border: none; font-weight: bold; margin: 5px; }
 .primary { background: var(--accent); color: white; }
 .secondary { background: var(--pause); color: white; }
@@ -60,12 +57,11 @@ body {
 .link { background: transparent; color: #44aaff; text-decoration: underline; margin-top: 20px; }
 .hidden { display: none !important; }
 
-/* Article Styling for AdSense */
 .article-container { 
     max-width: 800px; 
     text-align: left; 
     margin: 0 auto 100px; 
-    padding: 40px; 
+    padding: 50px; 
     line-height: 2.0;
     color: #cccccc;
     background: #1a1a1a;
@@ -74,21 +70,29 @@ body {
     border: 1px solid #333;
 }
 
-.article-container h1 { color: var(--accent); font-size: 2.2rem; margin-bottom: 1rem; }
-.article-container h2 { color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 50px; }
-.article-container h3 { color: #ffffff; margin-top: 35px; }
+.article-container h1 { color: var(--accent); font-size: 2.4rem; margin-bottom: 1.5rem; }
+.article-container h2 { color: var(--accent); border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 50px; font-size: 1.8rem; }
+.article-container h3 { color: #ffffff; margin-top: 35px; font-size: 1.4rem; }
 .article-container p, .article-container ul { margin-bottom: 25px; }
 .article-container li { margin-bottom: 15px; }
 
 .lead-text { 
-    font-size: 1.2rem; 
+    font-size: 1.25rem; 
     color: #eee; 
     font-style: italic; 
-    border-left: 4px solid var(--accent); 
+    border-left: 5px solid var(--accent); 
     padding-left: 20px; 
 }
 
-/* Footer Navigation */
+/* Comparison Box */
+.comparison-box {
+    background: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    margin: 30px 0;
+}
+
 footer { 
     margin-top: 60px; 
     text-align: center; 
@@ -98,17 +102,6 @@ footer {
     background: #000;
 }
 
-footer a { 
-    color: #44aaff; 
-    text-decoration: none; 
-    font-size: 0.9rem; 
-    margin: 0 15px; 
-}
-
+footer a { color: #44aaff; text-decoration: none; font-size: 0.9rem; margin: 0 15px; }
 footer a:hover { text-decoration: underline; }
-
-.copyright { 
-    color: #555; 
-    font-size: 0.75rem; 
-    margin-top: 15px; 
-}
+.copyright { color: #555; font-size: 0.75rem; margin-top: 15px; }
